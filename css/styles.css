@@ -181,8 +181,17 @@ background-color: var(--hoover-color);
  /* hero section */
  .hero{
     background-color: var(--title-text-colour);
-    padding: 188px 0
+    padding: 188px 0;
  }
+  .overlay{
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)) , url('../images/hero/people-office.jpg');
+    max-width: 1440px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
  .hero-headline{
     color:var(--primary-bakground-color);
     font-size: 56px;
@@ -208,6 +217,31 @@ padding: 120px 0
     gap: 24px
  }
 
+ .feature-items::before{
+    display: block;
+    content: "";
+    height: 112px;
+    background-color: #F4F4FD;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+ .icon-strategy::before{
+    background-image: url("../images/antenna.svg");
+ }
+
+ .icon-punctuality::before{
+background-image: url("../images/clock.svg");
+ }
+
+ .icon-diligence::before{
+background-image: url("../images/diagram.svg");
+ }
+
+.icon-technologies::before{
+    background-image: url("../images/astronaut.svg");
+}
+
  .feature-items{
     width: calc((100% - 72) / 4);
 
@@ -219,6 +253,7 @@ padding: 120px 0
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 .features-items-text{
@@ -257,9 +292,6 @@ padding: 120px 0
     
 }
 
-.team-items{
-    width: calc((100% - 72px) / 4);
-}
 
 
 .section-team{
@@ -285,8 +317,10 @@ padding: 120px 0
     
 }
 .team-items{
+    width: calc((100% - 72px) / 4);
     background-color: var(--primary-bakground-color);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
     
 
@@ -370,7 +404,8 @@ padding: 120px 0
 .portfolio-buttons:focus{
     background-color: var(--hoover-color);
     color: var(--white-color);
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list-works{
@@ -385,6 +420,11 @@ padding: 120px 0
 
 .portfolio-items{
     width: calc((100% - 48px) / 3)
+}
+
+.portfolio-items:hover,
+.portfolio-items:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-title{
