@@ -314,6 +314,7 @@ background-image: url("../images/diagram.svg");
 }
 .team-list-text{
     color: var(--primary-text-colour);
+    margin-bottom: 8px;
     
 }
 .team-items{
@@ -463,5 +464,35 @@ color: #2E2F42;
    padding: 32px 16px;
    border: 1px solid #E7E9FC;
    border-top: none;
+
+}
+
+
+
+
+
+
+
+
+
+.team-icon-list{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.social-media-link{
+    padding: 0;
+    display: flex;
+    background-color: var(--accent-colour);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    }
+
+.social-icon{
 
 }
