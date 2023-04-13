@@ -5,7 +5,8 @@
 --hoover-color: #404BBF;
 --primary-bakground-color: #fff;
 --secondary-background-color: #F4F4FD;
---portfolio-images-gap: 24px
+--portfolio-images-gap: 24px;
+--secondary-hover-color: #31D0AA;
 }
 
 body{
@@ -492,16 +493,30 @@ margin-bottom: 72px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     }
 
 .social-media-link:hover,
 .social-media-link:focus{
-  
+  background-color: var(--hoover-color)
 }    
 
-.social-icon{
-
+.social-media-link-footer{
+    padding: 0;
+    display: flex;
+    background-color: var(--accent-colour);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+.social-media-link-footer:hover,
+.social-media-link-footer:focus{
+  background-color: var(--secondary-hover-color)
+}    
 
 
 .footer-icons-list{
