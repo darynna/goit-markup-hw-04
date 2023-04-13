@@ -494,6 +494,11 @@ margin-bottom: 72px;
     align-items: center;
     }
 
+.social-media-link:hover,
+.social-media-link:focus{
+  
+}    
+
 .social-icon{
 
 }
