@@ -8,7 +8,6 @@
     --portfolio-images-gap: 24px;
     --secondary-hover-color: #31D0AA;
     --company-color: #8E8F99;
-    --customer-color: #afb1b8;
 }
 
 body {
@@ -410,7 +409,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--customer-color);
+    color: var(--company-color);
     cursor: pointer;
     width: 100%;
     height: 100%;
